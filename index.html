@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공정모니터링</title>
+    <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- 텍스트 박스 -->
+        <div class="water-tank gupokijo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level red-25">
+                    <img src="image/tank1.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">구)폭기조</span>
+            </div>
+            <div class="measurement-box flowmeter">
+                <label for="flow-input">유량계</label>
+                <div class="input-container">
+                    <input id="flow-input" type="text" placeholder="00" />
+                    <span class="unit">m³/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="water-tank yurangjo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level black-75">
+                    <img src="image/tank1.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">유량조</span>
+            </div>
+            <div class="measurement-box waterlevel">
+                <label for="flow-input">수위계</label>
+                <div class="input-container">
+                    <input id="flow-input" type="text" placeholder="0.0000" />
+                    <span class="unit">%</span>
+                </div>
+            </div>
+        </div>
+        <div class="water-tank pokijo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level red-50">
+                    <img src="image/tank1.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">폭기조</span>
+            </div>
+        </div>
+        <div class="water-tank taljiljo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level red-75">
+                    <img src="image/tank1.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">탈질조</span>
+            </div>
+        </div>
+        <div class="water-tank chimjonjo">
+            <div class="water-tank-box">
+                <div class="water-tank-img">
+                    <img src="image/tank4.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">침전조</span>
+            </div>
+        </div>
+        <div class="water-tank sukjipjo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level red-100">
+                    <img src="image/tank1.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">스컴저장조</span>
+            </div>
+            <div class="measurement-box waterlevel">
+                <label for="flow-input">수위계</label>
+                <div class="input-container">
+                    <input id="flow-input" type="text" placeholder="0.0000" />
+                    <span class="unit">%</span>
+                </div>
+            </div>
+        </div>
+        <div class="water-tank bansongjo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level red-75">
+                    <img src="image/tank2.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">반송조</span>
+            </div>
+        </div>
+        <div class="water-tank chulisujyo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level blue-50">
+                    <img src="image/tank1.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">처리수조</span>
+            </div>
+        </div>
+        <div class="water-tank ro">
+            <div class="water-tank-box">
+                <div class="water-tank-img">
+                    <img src="image/tank6.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">RO</span>
+            </div>
+        </div>
+        <div class="water-tank makchulisujyo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level blue-75">
+                    <img src="image/tank1.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">막처리수조</span>
+            </div>
+            <div class="measurement-box waterlevel">
+                <label for="flow-input">수위계</label>
+                <div class="input-container">
+                    <input id="flow-input" type="text" placeholder="0.0000" />
+                    <span class="unit">%</span>
+                </div>
+            </div>
+        </div>
+        <div class="water-tank makbunrijo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level blue-100">
+                    <img src="image/tank3.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">막분리조</span>
+            </div>
+            <div class="measurement-box waterlevel">
+                <label for="flow-input">수위계</label>
+                <div class="input-container">
+                    <input id="flow-input" type="text" placeholder="0.0000" />
+                    <span class="unit">%</span>
+                </div>
+            </div>
+            <div class="measurement-box flowmeter flowmeter-1">
+                <label for="flow-input">유량계</label>
+                <div class="input-container">
+                    <input id="flow-input" type="text" placeholder="00" />
+                    <span class="unit">m³/h</span>
+                </div>
+            </div>
+            <div class="measurement-box flowmeter flowmeter-2">
+                <label for="flow-input">유량계</label>
+                <div class="input-container">
+                    <input id="flow-input" type="text" placeholder="00" />
+                    <span class="unit">m³/h</span>
+                </div>
+            </div>
+        </div>
+        <div class="water-tank nongchukjo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level red-100">
+                    <img src="image/tank1.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">농축조</span>
+            </div>
+            <div class="measurement-box waterlevel">
+                <label for="flow-input">수위계</label>
+                <div class="input-container">
+                    <input id="flow-input" type="text" placeholder="0.0000" />
+                    <span class="unit">%</span>
+                </div>
+            </div>
+        </div>
+        <div class="water-tank gumakbunrijo">
+            <div class="water-tank-box">
+                <div class="water-tank-img water-level blue-100">
+                    <img src="image/tank3.svg" alt="물탱크이미지" />
+                </div>
+                <span class="water-tank-text">구)막분리조</span>
+            </div>
+            <div class="measurement-box flowmeter">
+                <label for="flow-input">유량계</label>
+                <div class="input-container">
+                    <input id="flow-input" type="text" placeholder="00" />
+                    <span class="unit">m³/h</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
