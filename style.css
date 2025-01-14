@@ -19,7 +19,14 @@ body {
     background-image: url('image/background_process_monitoring.svg');
     background-position: -45px 0px;
 }
+.container.ro-monitoring{
+    background-image: url('image/background_ro_monitoring.svg');
+    background-position: 0px 0px;
+}
 
+/* 
+    **공정 모니터링 CSS** 
+*/
 /* 수조 스타일 */
 .process-monitoring .water-tank {
     position: absolute;
@@ -232,3 +239,6 @@ body {
 }
 
 
+/* 
+    **RO 모니터링 CSS** 
+*/
