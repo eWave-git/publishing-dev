@@ -2,24 +2,24 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: #eee;
+    overflow-x: hidden;
 }
 
 .container {
+    background-color: #fff;
     position: relative;
     width: 1920px;
     margin: 0 auto;
-    height: 100vh;
-    /* min-height: 1080px; */
+    height: 1080px;
     margin: 0 auto;
     background-image: url('image/background_arrow.svg');
-    background-position: 120px center;
+    background-position: -45px 0px;
     background-repeat: no-repeat;
-    background-size: contain;
 }
 /* 수조 스타일 */
 .water-tank {
-    position: relative;
+    position: absolute;
     display: inline-block;
 }
 
@@ -92,58 +92,57 @@ body {
     justify-content: flex-start;
     align-items: center;
 }
-.water-tank.gupokijo  .water-tank-box{
-    left: 581px;
-    top: 130px;
+.water-tank.gupokijo { /* 구)폭기조 */
+    left: 495px;
+    top: 200px;
 }
-.water-tank.yurangjo .water-tank-box{  /* 유량조 */
-    left: 220px;
-    top: 266px;
+.water-tank.yurangjo{  /* 유량조 */
+    left: 90px;
+    top: 350px;
 }
-.water-tank.pokijo .water-tank-box{
-    left: 540px;
-    top: 266px;
+.water-tank.pokijo { /* 폭기조 */
+    left: 467px;
+    top: 350px;
 }
-.water-tank.taljiljo .water-tank-box{
-    left: 730px;
-    top: 266px;
+.water-tank.taljiljo{ /* 탈질조 */
+    left: 695px;
+    top: 350px;
 }
-.water-tank.chimjonjo .water-tank-box{
-    left: 998px;
-    top: 250px;
+.water-tank.chimjonjo { /* 침전조 */
+    left: 1018px;
+    top: 340px;
 }
-.water-tank.sukjipjo .water-tank-box{
-    left: 1330px;
-    top: 140px;
+.water-tank.sukjipjo { /* 스컴저장조 */
+    left: 1400px;
+    top: 205px;
 }
-.water-tank.bansongjo .water-tank-box{
-    left: 1330px;
-    top: 383px;
+.water-tank.bansongjo { /* 반송조 */
+    left: 1400px;
+    top: 470px;
 }
-
-.water-tank.chulisujyo .water-tank-box{
-    left: 189px;
-    top: 605px;
+.water-tank.chulisujyo{ /* 처리수조 */
+    left: 90px;
+    top: 735px;
 }
-.water-tank.ro .water-tank-box{
-    left: 425px;
-    top: 605px;
+.water-tank.ro .water-tank-box{ /* RO */
+    left: 370px;
+    top: 735px;
 }
-.water-tank.makchulisujyo .water-tank-box{
-    left: 680px;
-    top: 605px;
+.water-tank.makchulisujyo { /* 막처리수조 */
+    left: 672px;
+    top: 735px;
 }
-.water-tank.makbunrijo .water-tank-box{
-    left: 973px;
-    top: 605px;
+.water-tank.makbunrijo { /* 막분리조 */
+    left: 1019px;
+    top: 735px;
 }
-.water-tank.nongchukjo .water-tank-box{
-    left: 1268px;
-    top: 605px;
+.water-tank.nongchukjo { /* 농축조 */
+    left: 1369px;
+    top: 735px;
 }
-.water-tank.gumakbunrijo .water-tank-box{
-    left: 1575px;
-    top: 605px;
+.water-tank.gumakbunrijo{ /* 구)막분리조 */
+    left: 1725px;
+    top: 735px;
 }
 
 
@@ -201,44 +200,28 @@ body {
 
 /* 유량계 포지션 */
 .water-tank.gupokijo .flowmeter{
-    left: 673px;
-    top: 103px;
+    left: 120px;
+    top: -40px;
 }
 .water-tank.yurangjo .flowmeter{
-    left: 370px;
-    top: 235px;
+    left: 170px;
+    top: -40px;
 }
 .water-tank.makbunrijo .flowmeter-1{
-    left: 825px;
-    top: 560px;
+    left: -180px;
+    top: -40px;
 }
 .water-tank.makbunrijo .flowmeter-2{
-    left: 1100px;
-    top: 560px;
+    left: 150px;
+    top: -40px;
 }
 .water-tank.gumakbunrijo .flowmeter{
-    left: 1400px;
-    top: 560px;
+    left: -185px;
+    top: -40px;
 }
 
 /* 수위계 포지션 */
-.water-tank.yurangjo .waterlevel{
-    left: 205px;
-    top: 400px;
-}
-.water-tank.sukjipjo .waterlevel{
-    left: 1315px;
-    top: 275px;
-}
-.water-tank.makchulisujyo .waterlevel{
-    left: 675px;
-    top: 745px;
-}
-.water-tank.makbunrijo .waterlevel{
-    left: 962px;
-    top: 745px;
-}
-.water-tank.nongchukjo .waterlevel{
-    left: 1260px;
-    top: 745px;
+.water-tank .waterlevel{
+    left: -14px;
+    top: 135px;
 }
