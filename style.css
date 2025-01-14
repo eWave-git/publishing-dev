@@ -13,26 +13,29 @@ body {
     margin: 0 auto;
     height: 1080px;
     margin: 0 auto;
-    background-image: url('image/background_arrow.svg');
-    background-position: -45px 0px;
     background-repeat: no-repeat;
 }
+.container.process-monitoring{
+    background-image: url('image/background_process_monitoring.svg');
+    background-position: -45px 0px;
+}
+
 /* 수조 스타일 */
-.water-tank {
+.process-monitoring .water-tank {
     position: absolute;
     display: inline-block;
 }
 
-.water-tank .water-tank-box{
+.process-monitoring .water-tank-box{
     position: absolute;
 }
-.water-tank .water-tank-img{
+.process-monitoring .water-tank-img{
     flex-shrink: 0;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.water-tank .water-tank-text{
+.process-monitoring .water-tank-text{
     display: block;
     margin-top: 5px;
     font-size: 20px;
@@ -42,111 +45,113 @@ body {
     white-space: nowrap;
 }
 
-.water-tank .water-tank-img.water-level{
+.process-monitoring .water-tank-img.water-height{
     width: 91px;
     height: 94px;
 }
-.water-tank .water-tank-img.water-level.red-25{
-    
+
+/* 물 높이 레벨에 따른 클래스 */
+.process-monitoring .water-tank-img.water-height.red-25{    
     background-image: url('image/red_25.svg');
 }
-.water-tank .water-tank-img.water-level.red-50{
+.process-monitoring .water-tank-img.water-height.red-50{
     background-image: url('image/red_50.svg');
 }
-.water-tank .water-tank-img.water-level.red-75{
+.process-monitoring .water-tank-img.water-height.red-75{
     background-image: url('image/red_75.svg');
 }
-.water-tank .water-tank-img.water-level.red-100{
+.process-monitoring .water-tank-img.water-height.red-100{
     background-image: url('image/red_100.svg');
 }
-.water-tank .water-tank-img.water-level.black-25{
+.process-monitoring .water-tank-img.water-height.black-25{
     background-image: url('image/black_25.svg');
 }
-.water-tank .water-tank-img.water-level.black-50{
+.process-monitoring .water-tank-img.water-height.black-50{
     background-image: url('image/black_50.svg');
 }
-.water-tank .water-tank-img.water-level.black-75{
+.process-monitoring .water-tank-img.water-height.black-75{
     background-image: url('image/black_75.svg');
 }
-.water-tank .water-tank-img.water-level.black-100{
+.process-monitoring .water-tank-img.water-height.black-100{
     background-image: url('image/black_100.svg');
 }
-.water-tank .water-tank-img.water-level.blue-25{
+.process-monitoring .water-tank-img.water-height.blue-25{
     background-image: url('image/blue_25.svg');
 }
-.water-tank .water-tank-img.water-level.blue-50{
+.process-monitoring .water-tank-img.water-height.blue-50{
     background-image: url('image/blue_50.svg');
 }
-.water-tank .water-tank-img.water-level.blue-75{
+.process-monitoring .water-tank-img.water-height.blue-75{
     background-image: url('image/blue_75.svg');
 }
-.water-tank .water-tank-img.water-level.blue-100{
+.process-monitoring .water-tank-img.water-height.blue-100{
     background-image: url('image/blue_100.svg');
 }
 
+
 /* 텍스트 박스 위치 */
-.water-tank .water-tank-box{
+.process-monitoring .water-tank .water-tank-box{
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
-.water-tank.gupokijo { /* 구)폭기조 */
+.process-monitoring .water-tank.gupokijo { /* 구)폭기조 */
     left: 495px;
     top: 200px;
 }
-.water-tank.yurangjo{  /* 유량조 */
+.process-monitoring .water-tank.yurangjo{  /* 유량조 */
     left: 90px;
     top: 350px;
 }
-.water-tank.pokijo { /* 폭기조 */
+.process-monitoring .water-tank.pokijo { /* 폭기조 */
     left: 467px;
     top: 350px;
 }
-.water-tank.taljiljo{ /* 탈질조 */
+.process-monitoring .water-tank.taljiljo{ /* 탈질조 */
     left: 695px;
     top: 350px;
 }
-.water-tank.chimjonjo { /* 침전조 */
+.process-monitoring .water-tank.chimjonjo { /* 침전조 */
     left: 1018px;
     top: 340px;
 }
-.water-tank.sukjipjo { /* 스컴저장조 */
+.process-monitoring .water-tank.sukjipjo { /* 스컴저장조 */
     left: 1400px;
     top: 205px;
 }
-.water-tank.bansongjo { /* 반송조 */
+.process-monitoring .water-tank.bansongjo { /* 반송조 */
     left: 1400px;
     top: 470px;
 }
-.water-tank.chulisujyo{ /* 처리수조 */
+.process-monitoring .water-tank.chulisujyo{ /* 처리수조 */
     left: 90px;
     top: 735px;
 }
-.water-tank.ro .water-tank-box{ /* RO */
+.process-monitoring .water-tank.ro{ /* RO */
     left: 370px;
     top: 735px;
 }
-.water-tank.makchulisujyo { /* 막처리수조 */
+.process-monitoring .water-tank.makchulisujyo { /* 막처리수조 */
     left: 672px;
     top: 735px;
 }
-.water-tank.makbunrijo { /* 막분리조 */
+.process-monitoring .water-tank.makbunrijo { /* 막분리조 */
     left: 1019px;
     top: 735px;
 }
-.water-tank.nongchukjo { /* 농축조 */
+.process-monitoring .water-tank.nongchukjo { /* 농축조 */
     left: 1369px;
     top: 735px;
 }
-.water-tank.gumakbunrijo{ /* 구)막분리조 */
+.process-monitoring .water-tank.gumakbunrijo{ /* 구)막분리조 */
     left: 1725px;
     top: 735px;
 }
 
 
-.measurement-box{
+.process-monitoring .measurement-box{
     width: 120px;
     position: absolute;
     background-color: #3F3F5A; /* 카드 배경색 */
@@ -157,7 +162,7 @@ body {
     overflow: hidden;
     
 }
-.measurement-box label {
+.process-monitoring .measurement-box label {
     font-size: 13px;
     font-weight: 700;
     display: block;
@@ -165,7 +170,7 @@ body {
     padding: 10px;
     line-height: 1;
 }
-.measurement-box .input-container {
+.process-monitoring .measurement-box .input-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -174,7 +179,7 @@ body {
     background-color: #27274C;
     line-height: 1;
 }
-.measurement-box .input-container input {
+.process-monitoring .measurement-box .input-container input {
     width: 50px;
     width: calc(100% - 30px);
     font-size: 18px;
@@ -186,42 +191,44 @@ body {
     font-weight: 700;
     -webkit-text-stroke: 1px #BD0600;
 }
-.measurement-box .input-container input:focus {
+.process-monitoring .measurement-box .input-container input:focus {
     outline: none;
 }
-.measurement-box .input-container input::placeholder {
+.process-monitoring .measurement-box .input-container input::placeholder {
    /*  color: #eee; */
     color: #FFFF35;
 }
-.measurement-box .unit {
+.process-monitoring .measurement-box .unit {
     font-size: 12px;
     margin-left: 5px;
 }
 
 /* 유량계 포지션 */
-.water-tank.gupokijo .flowmeter{
+.process-monitoring .water-tank.gupokijo .flowmeter{
     left: 120px;
     top: -40px;
 }
-.water-tank.yurangjo .flowmeter{
+.process-monitoring .water-tank.yurangjo .flowmeter{
     left: 170px;
     top: -40px;
 }
-.water-tank.makbunrijo .flowmeter-1{
+.process-monitoring .water-tank.makbunrijo .flowmeter-1{
     left: -180px;
     top: -40px;
 }
-.water-tank.makbunrijo .flowmeter-2{
+.process-monitoring .water-tank.makbunrijo .flowmeter-2{
     left: 150px;
     top: -40px;
 }
-.water-tank.gumakbunrijo .flowmeter{
+.process-monitoring .water-tank.gumakbunrijo .flowmeter{
     left: -185px;
     top: -40px;
 }
 
 /* 수위계 포지션 */
-.water-tank .waterlevel{
+.process-monitoring .water-tank .waterlevel{
     left: -14px;
     top: 135px;
 }
+
+
