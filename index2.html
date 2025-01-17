@@ -47,6 +47,13 @@
                         <p class="switch-label">LL</p>
                     </li>
                 </ul>
+                <div class="measurement-textbox">
+                    <label for="flow-input">원수탱크 수위</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="000000" />
+                        <span class="unit">%</span>
+                    </div>
+                </div>
             </div>
             <div class="water-tank-box tank-2 second-tank water-level-1">
                 <div class="water-tank-inner">
@@ -77,6 +84,13 @@
                         <p class="switch-label">LL</p>
                     </li>
                 </ul>
+                <div class="measurement-textbox">
+                    <label for="flow-input">#1RO 수위</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">%</span>
+                    </div>
+                </div>
             </div>
             <div class="water-tank-box tank-3 second-tank water-level-3">
                 <div class="water-tank-inner">
@@ -107,6 +121,13 @@
                         <p class="switch-label">LL</p>
                     </li>
                 </ul>
+                <div class="measurement-textbox">
+                    <label for="flow-input">#2RO 수위</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">%</span>
+                    </div>
+                </div>
             </div>
             <div class="water-tank-box tank-4 second-tank water-level-4">
                 <div class="water-tank-inner">
@@ -200,85 +221,397 @@
                     </li>
                 </ul>
             </div>
+            <div class="water-tank-box tank-7 fourth-tank water-level-3">
+                <div class="water-tank-inner">
+                    <div class="tank-image">
+                        <p>
+                            <img src="image/water_tank3_0.svg" alt="Inorganic Tank" />
+                        </p>
+                    </div>
+                    <p class="tank-name" style="margin-top: 0;">
+                        <span>Inorganic Tank</span>
+                    </p>
+                </div>
+            </div>
         </div>
         <div class="pump-area">
-            <div class="pump-box pump-1">
+            <!-- 퍼블리싱 switch-active, p.on-off-switch부분에도 switch-on클래스 추가되야함 -->
+            <div class="pump-box pump-1 switch-active">
                 <div class="pump-inner">
                     <div class="pump-images">
-                        <p>
-                            <img src="image/pump_l.svg" alt="FEED PUMP" />
-                        </p>
-                        <p>
-                            <img src="image/pump_l.svg" alt="FEED PUMP" />
-                        </p>
+                        <p class="on-off-switch switch-on"></p>
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="pump-box pump-2 switch-active">
+                <div class="pump-inner">
+                    <div class="pump-images">
+                        <p class="on-off-switch switch-on"></p>
+                        <p class="on-off-switch"></p>
                     </div>
                     <p class="pump-name">
                         <span>RO#1 FEED PUMP</span>
                     </p>
                 </div>
             </div>
-            <div class="pump-box pump-2">
+            <div class="pump-box pump-3 switch-active">
                 <div class="pump-inner">
                     <div class="pump-images">
-                        <p>
-                            <img src="image/pump_l.svg" alt="HIGH PRESSURE PUMP" />
-                        </p>
-                        <p>
-                            <img src="image/pump_l.svg" alt="HIGH PRESSURE PUMP" />
-                        </p>
+                        <p class="on-off-switch switch-on"></p>
+                        <p class="on-off-switch"></p>
                     </div>
                     <p class="pump-name">
                         <span>RO#1 HIGH PRESSURE PUMP</span>
                     </p>
                 </div>
             </div>
-            <div class="pump-box pump-3">
+            <div class="pump-box pump-4 switch-active">
                 <div class="pump-inner">
                     <div class="pump-images">
-                        <p>
-                            <img src="image/pump_l.svg" alt="FEED PUMP" />
-                        </p>
-                        <p>
-                            <img src="image/pump_l.svg" alt="FEED PUMP" />
-                        </p>
+                        <p class="on-off-switch switch-on"></p>
+                        <p class="on-off-switch"></p>
                     </div>
                     <p class="pump-name">
                         <span>RO#2 FEED PUMP</span>
                     </p>
                 </div>
             </div>
-            <div class="pump-box pump-4">
+            <div class="pump-box pump-5 switch-active">
                 <div class="pump-inner">
                     <div class="pump-images">
-                        <p>
-                            <img src="image/pump_l.svg" alt="HIGH PRESSURE PUMP" />
-                        </p>
-                        <p>
-                            <img src="image/pump_l.svg" alt="HIGH PRESSURE PUMP" />
-                        </p>
+                        <p class="on-off-switch switch-on"></p>
+                        <p class="on-off-switch"></p>
                     </div>
                     <p class="pump-name">
                         <span>RO#2 HIGH PRESSURE PUMP</span>
                     </p>
                 </div>
             </div>
-            <div class="pump-box pump-5">
+            <div class="pump-box pump-6 switch-active">
                 <div class="pump-inner">
                     <div class="pump-images">
-                        <p>
-                            <img src="image/pump_l.svg" alt="CIP PUMP" />
-                        </p>
-                        <p>
-                            <img src="image/pump_l.svg" alt="CIP PUMP" />
-                        </p>
+                        <p class="on-off-switch switch-on"></p>
+                        <p class="on-off-switch"></p>
                     </div>
                     <p class="pump-name">
                         <span>CIP PUMP</span>
                     </p>
                 </div>
             </div>
+            <div class="pump-box pump-7 switch-active">
+                <div class="pump-inner">
+                    <div class="pump-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                    <p class="pump-name">
+                        <span>Antisclant Pump</span>
+                    </p>
+                </div>
+            </div>
         </div>
+        <div class="measurement-area">
+            <div class="measurement-container measure-1 switch-active">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">원수 유량계</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="000000" />
+                        <span class="unit">m3/h</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-2">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">IN 전도도</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">PPM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-3">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">2차 저압</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">kg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-4">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                    <span class="measurement-name">AV11</span>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">1차 고압</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">kg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-5">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">OUT 전도도</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">PPM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-6 switch-active">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">1차 유량계</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="000000" />
+                        <span class="unit">m3/h</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-7">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">농축 유량계</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="000000" />
+                        <span class="unit">m3/h</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-8 switch-active">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">IN 전도도</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">PPM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-9 switch-active">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">2차 저압</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">kg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-10">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">2차 고압</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">kg</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-11">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">OUT 전도도</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="00000" />
+                        <span class="unit">PPM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="measurement-container measure-12">
+                <div class="measurement-inner">
+                    <div class="measurement-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+                <div class="measurement-textbox">
+                    <label for="flow-input">2차 유량계</label>
+                    <div class="input-container">
+                        <input id="flow-input" type="text" placeholder="000000" />
+                        <span class="unit">m3/h</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lightbulb-area">
+            <div class="lightbulb-box light-1 switch-active">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-2">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-3">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-4 switch-active">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                    <span class="lightbulb-name">AV10</span>
+                </div>
+            </div>
+            <div class="lightbulb-box light-5 switch-active">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-6">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-7 switch-active">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-8">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-9 switch-active">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch switch-on"></p>
+                    </div>
+                </div>
+            </div>
 
+            <div class="lightbulb-box light-10">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-11">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-12">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-13">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-14">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-15">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lightbulb-box light-16">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-17">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="lightbulb-box light-18">
+                <div class="lightbulb-inner">
+                    <div class="lightbulb-images">
+                        <p class="on-off-switch"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>         
 </body>
 </html>
